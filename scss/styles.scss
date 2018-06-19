@@ -1,38 +1,6 @@
-// variables
-$primaryColor: #512da8;
-$sizeText: 26px;
-$offWhite: #f6f8fb;
-$linkHoverColor: #d1c4e9;
-$bannerHeading: 46px;
-
-// mixins
-@mixin banner {
-  width: 100%;
-  position: relative;
-  color: white;
-
-  img {
-    width: 100%;
-  }
-
-  .banner-content {
-    position: absolute;
-    top: 50px;
-    width: 100%;
-  }
-
-  span {
-    display: block;
-    font-size: $bannerHeading;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  span.title {
-    font-weight: normal;
-    margin-bottom: 30px;
-  }
-}
+@import 'reset';
+@import 'variables';
+@import 'mixins';
 
 #main-nav {
   background: $primaryColor;
