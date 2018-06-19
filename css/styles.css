@@ -1,11 +1,9 @@
-.rule {
-  color: red;
+#main-nav {
+  background: #512da8;
 }
-.rule a {
-  color: blue;
-}
-.rule a span {
-  color: green;
+
+section h1 {
+  font-size: 26px;
 }
 
 /*# sourceMappingURL=css/styles.css.map */
