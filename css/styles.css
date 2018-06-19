@@ -29,14 +29,19 @@ li {
 }
 
 #main-nav {
-  background: #512da8;
+  background: #267D8B;
 }
 #main-nav ul {
   width: 100%;
 }
+#main-nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 #main-nav li {
   float: left;
-  width: 14%;
+  width: 16.6666666667%;
 }
 #main-nav a {
   color: #f6f8fb;
@@ -47,12 +52,10 @@ li {
   transition: 0.3s;
 }
 #main-nav a:hover {
-  color: #d1c4e9;
-}
-#main-nav ul:after {
-  content: "";
-  display: block;
-  clear: both;
+  color: black;
+  background: #eee;
+  border-radius: 10px;
+  letter-spacing: 1.5px;
 }
 
 section h1 {
@@ -111,6 +114,33 @@ section h1 {
   text-transform: uppercase;
   margin: 10px 0;
   font-size: 20px;
+}
+
+#services {
+  margin-bottom: 60px;
+}
+#services ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#services li {
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  width: 33.3333333333%;
+}
+#services img {
+  width: 60%;
+  margin: 20px 20%;
+}
+#services a {
+  text-decoration: none;
+  color: #267D8B;
+  font-weight: bold;
+}
+#services a:hover {
+  color: red;
 }
 
 /*# sourceMappingURL=css/styles.css.map */

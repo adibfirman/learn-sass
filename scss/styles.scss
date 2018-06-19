@@ -6,11 +6,12 @@
   background: $primaryColor;
   ul {
     width: 100%;
+    @include clearFix;
   }
 
   li {
     float: left;
-    width: 14%;
+    width: (100% / 6);
   }
 
   a {
@@ -20,16 +21,13 @@
     display: block;
     text-align: center;
     transition: 0.3s;
-  }
 
-  a:hover {
-    color: $linkHoverColor;
-  }
-
-  ul:after {
-    content: "";
-    display: block;
-    clear: both;
+    &:hover {
+      color: $linkHoverColor;
+      background: #eee;
+      border-radius: 10px;
+      letter-spacing: 1.5px;
+    }
   }
 } // --end of #main-nav
 
@@ -44,9 +42,40 @@ section h1 {
 
 .lessons-banner {
   @include banner;
+
   li {
     text-transform: uppercase;
     margin: 10px 0;
     font-size: 20px;
+  }
+}
+
+#services {
+  margin-bottom: 60px;
+
+  ul {
+    @include clearFix;
+  }
+
+  li {
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    width: (100% / 3);
+  }
+
+  img {
+    width: 60%;
+    margin: 20px 20%;
+  }
+
+  a {
+    text-decoration: none;
+    color: $primaryColor;
+    font-weight: bold;
+
+    &:hover {
+      color: red;
+    }
   }
 }
