@@ -43,3 +43,9 @@
     margin-right: 0;
   }
 }
+
+@mixin mQ($number) {
+  @media screen and (max-width: $number) {
+    @content;
+  }
+}
