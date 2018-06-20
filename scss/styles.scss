@@ -20,11 +20,10 @@
     padding: 16px;
     display: block;
     text-align: center;
-    transition: 0.3s;
+    transition: $transitionTime;
 
     &:hover {
-      color: $linkHoverColor;
-      background: #eee;
+      background: lighten($primaryColor, 6);
       border-radius: 10px;
       letter-spacing: 1.5px;
     }
@@ -73,9 +72,10 @@ section h1 {
     text-decoration: none;
     color: $primaryColor;
     font-weight: bold;
+    transition: $transitionTime;
 
     &:hover {
-      color: red;
+      color: complement($primaryColor);
     }
   }
 }
