@@ -18,6 +18,10 @@
     font-size: $bannerHeading;
     text-transform: uppercase;
     font-weight: bold;
+
+    @include mQ(1000px, 1300px) {
+      font-size: 10px;
+    }
   }
 
   span.title {
@@ -44,8 +48,16 @@
   }
 }
 
-@mixin mQ($number) {
-  @media screen and (max-width: $number) {
-    @content;
+@mixin mQ($arg...) {
+  @if length($arg) == 1 {
+    @media screen and (max-width: nth($arg, 1)) {
+      @content;
+    }
+  }
+
+  @if length($arg) == 2 {
+    @media screen and (max-width: nth($arg, 1)) and (min-width: nth($arg, 2)) {
+      @content;
+    }
   }
 }

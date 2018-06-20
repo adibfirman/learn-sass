@@ -86,6 +86,11 @@ section h1 {
   text-transform: uppercase;
   font-weight: bold;
 }
+@media screen and (max-width: 1000px) and (min-width: 1300px) {
+  .lead-banner span {
+    font-size: 10px;
+  }
+}
 .lead-banner span.title {
   font-weight: normal;
   margin-bottom: 30px;
@@ -109,6 +114,11 @@ section h1 {
   font-size: 46px;
   text-transform: uppercase;
   font-weight: bold;
+}
+@media screen and (max-width: 1000px) and (min-width: 1300px) {
+  .lessons-banner span {
+    font-size: 10px;
+  }
 }
 .lessons-banner span.title {
   font-weight: normal;
